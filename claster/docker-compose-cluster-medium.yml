@@ -48,7 +48,7 @@ services:
     restart: "no"
     environment:
       KAFKA_BROKERCONNECT: "kafka1:29092,kafka2:29093"
-      JVM_OPTS: "-Xms16M -Xmx512M -Xss180K -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"
+      JVM_OPTS: "-Xms16M -Xmx512M -Xss16M -XX:-TieredCompilation -XX:+UseStringDeduplication -noverify"
     ports:
       - 9000:9000
     depends_on:
